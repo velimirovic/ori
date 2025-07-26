@@ -63,12 +63,30 @@ class RobotState(State):
         if len(self.checkpoints) == 0:
             actions = both
 
+        #Obicno kretanje
         for d_row, d_col in actions: 
             new_row = row + d_row
             new_col = col + d_col 
 
             if not self.board.is_out_of_bounds(new_row, new_col) and not self.board.hits_wall(new_row, new_col):
                 new_positions.append(((new_row, new_col), (d_row, d_col)))
+        return new_positions
+
+        #Za topa
+        directions = [(0, 1), (0, -1), (1, 0), (-1, 0)]
+        #Za lovca
+        directions = [(1, 1), (1, -1), (-1, 1), (-1, -1)]
+        
+        for dx, dy in directions:
+            for step in range(1, max(self.board.rows, self.board.cols)):
+                new_x = row + dx * step
+                new_y = col + dy * step
+                
+                if self.board.is_out_of_bounds(new_x, new_y) or self.board.hits_wall(new_x, new_y):
+                    break 
+                    
+                new_positions.append(((new_x, new_y), (dx * step, dy * step)))
+                
         return new_positions
 
     def is_final_state(self):
