@@ -1,0 +1,3 @@
+Korelacija rezultata na testu iz matematike(score) i koncentracije Lysergic Acid Diethylamide-a (LSD) 
+kod studenata koji su radili test(concentration). 
+Izvršiti predikciju rezultata na testu za studenta koji ima koncentraciju LSD-a od 6.00.

@@ -1,0 +1,31 @@
+ZADATAK 5 - Klasifikacija hepatitisa C
+
+Dat je dataset sa podacima o pacijentima i različitim tipovima hepatitisa C.
+Dataset se nalazi u fajlu "hepatitisc.csv".
+
+CILJ: Kreirati model za klasifikaciju pacijenata u jednu od 5 kategorija:
+- Blood Donor (zdravi davaoci krvi)
+- Suspect Blood Donor (sumnjivi davaoci krvi) 
+- Hepatitis (hepatitis)
+- Fibrosis (fibroza)
+- Cirrhosis (ciroza)
+
+PODACI:
+Dataset sadrži sledeće kolone:
+- Category (ciljna varijabla): tip dijagnoze
+- Sex: pol pacijenta (m/f)
+- Age: godine pacijenta
+- ALB, ALP, ALT, AST, BIL, CHE, CHOL, CREA, GGT, PROT: medicinski parametri krvi
+
+INSTRUKCIJE:
+1. Učitati podatke iz CSV fajla (prvu kolonu ignorisati)
+2. Primeniti LabelEncoder na kategoričke kolone (Sex, Category)
+3. Podeliti podatke na trening (70%) i test skup (30%) sa random_state=42
+4. Standardizovati numeričke kolone (Age i sve medicinske parametre)
+5. Kreirati neuronsku mrežu (MLP) za multiclass klasifikaciju
+6. Koristiti CrossEntropyLoss i Adam optimizator
+7. Trenirati model tokom 500 epoha sa learning rate=0.001
+8. Na kraju ispisati F1 score (micro average) nad test skupom
+
+OČEKIVANI REZULTATI:
+Model treba da postigne F1 score veći od 0.9 (90%).

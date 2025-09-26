@@ -1,0 +1,1 @@
+Klasifikacija SMS poruka na spam i ham (poruke koje nisu spam).

@@ -1,0 +1,6 @@
+Izvršiti predikciju da li će zaposleni napustiti kompaniju na osnovu istorije telefonskih poziva. 
+Predikciju izvršiti na osnovu činjenice da li zaposleni ima pravo na međunarodne pozive (international plan), 
+da li ima govorne poruke (voice mail plan), broja govornih poruka (number vmail messages), 
+broja međunarodnih poziva (total intl calls), broja noćnih poziva (total night calls) i broja dnevnih poziva 
+(total day calls). Atribut churn pokazuje da li je zaposleni napustio kompaniju ili ne. 
+Skup podataka podeliti u odnosu od 70:30 i ispisati procenat tačnosti nad test skupom.

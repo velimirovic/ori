@@ -1,0 +1,5 @@
+Podaci o pacijentima koji su podvrgnuti operaciji raka dojke. 
+Za svakog pacijenta poznata je starost (age), godina u 20. veku kada je operacija izvršena (year), 
+broj detektovanih pazušnih čvorova kod pacijenta (nodes) i smrtnost pacijenta (mortality, 0-pacijent preživeo 5 ili 
+više godina, 1-pacijent preminuo najviše 5 godina od operacije). 
+Predvideti smrtnosti pacijenata čiji podaci se nalaze u cancer_predict.csv.
